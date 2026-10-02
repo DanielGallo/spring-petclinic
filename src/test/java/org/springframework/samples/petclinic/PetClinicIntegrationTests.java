@@ -49,6 +49,7 @@ public class PetClinicIntegrationTests {
 		vets.findAll(); // served from cache
 	}
 
+	// Verify that the owner details endpoint returns HTTP 200 OK.
 	@Test
 	void ownerDetails() {
 		RestTemplate template = builder.baseUri("http://localhost:" + port).build();
